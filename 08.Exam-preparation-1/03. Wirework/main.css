@@ -112,17 +112,53 @@ body {
     font-size: 18px;
 }
 
+/* Sections */
+
+.section--full{
+    padding: 6rem 4rem;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.section-grid .section-grid-item{
+    text-align: center;
+}
+
 /* Features */
 
 #features{
-    display: flex;
-    align-items: center;
-    justify-content: center;   
+    background-color: #383838;
+    color: var(--clr-white);
 }
 
-#features .section-grid{
-    display: grid;
-    grid-template-columns: 7rem 7rem 7rem 7rem;
-    grid-row-gap: 1px;
-    grid-column-gap: 16rem;
+#features .section-grid-item .icon-container{
+    padding: 1rem;
+    background-color: var(--clr-primary);
+    width: 8rem;
+    font-size: 4rem;
+    margin: 0 auto;
 }
+
+#features .section-grid-item .title{
+    margin-bottom: 1.5rem;
+}
+
+#features .section-grid-item .divider {
+    height: 1px;
+    background-color: #6c6c63;
+    margin-bottom: 1.5rem;
+}
+
+#features .section-grid-item .desc {
+    color: #6c6c63;
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+/* Advantages */
+
