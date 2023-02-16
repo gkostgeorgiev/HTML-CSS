@@ -141,6 +141,7 @@ body {
     width: 8rem;
     font-size: 4rem;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 #features .section-grid-item .title{
@@ -160,5 +161,56 @@ body {
     margin: 0 auto;
 }
 
+/* Subscribe */
+
+#subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--clr-white);
+}
+
+#subscribe .title{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+#subscribe .desc{ 
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    color: #a2a2a2;
+}
+
+#subscribe .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background-color: #1b9772;
+    color: var(--clr-white);
+    border: none;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+}
+
 /* Advantages */
 
+#advantages {
+    background-color: #383838;
+    color: var(--clr-white);
+}
+
+#advantages .section-grid-item .desc {
+    color: #6c6c63;
+    width: 90%;
+    font-size: 1.2rem;
+    margin: 0 auto;
+}
+
+#advantages .section-grid-item .title{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
