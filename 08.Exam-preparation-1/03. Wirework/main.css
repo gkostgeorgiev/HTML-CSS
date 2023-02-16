@@ -1,12 +1,79 @@
 @import url(reset.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
 
+:root {
+    --clr-primary: #e24e2a;
+    --clr-grey: #ececec;
+    --clr-grey-dark: #3f3f3f;
+    --clr-grey-bg: #5d5954;
+    --clr-green: #1b9772;
+    --clr-green-text: #3aa483;
+    --clr-green-link: #8ec2aa;
+    --clr-white: #fff;
+}
+
 body {
     font-family: Helvetica, sans-serif;
+    color: var(--clr-grey-dark);
 }
 
 /* Navigation */
 
+.header {
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
 
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header .logo .main {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.header .logo .divider {
+    width: 1px;
+    height: 50px;
+    background-color: var(--clr-grey-dark);
+    display: inline-block;
+}
+
+.header .logo .sub {
+    font-size: 21px;
+}
+
+.header .nav {
+    display: flex;
+    gap: 2px;
+}
+
+.header .nav .nav-item{
+    padding: 1rem 2rem;
+    background-color: var(--clr-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav .nav-item.active{
+    background-color: var(--clr-primary);
+    color: var(--clr-white)
+}
+
+.header .nav .nav-item .nav-link {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1.1px;
+    line-height: 1;
+}
 
 /* Hero */
