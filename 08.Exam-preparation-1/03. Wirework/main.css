@@ -214,3 +214,31 @@ body {
     margin-bottom: 3rem;
     font-weight: 300;
 }
+
+/* Footer */
+
+#footer {
+    background-color: #1b9772;
+    color: #5bb495;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .desc {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+}
+
+#footer .desc .divider {
+    width: 1px;
+    height: 2rem;
+    background-color: #5bb495;
+    display: inline-block;
+    margin: 0 16px;
+    padding-top: 20px;
+}
+
+#footer .highlight {
+    color: #a2d4c1;
+}
