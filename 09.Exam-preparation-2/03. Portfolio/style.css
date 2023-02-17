@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+/* Variables */
+:root {
+    --clr-grey-bg: #efefef;
+}
+
+/* Common */
+
+body {
+    font-family: Raleway;
+    margin: 2rem 2.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.section {
+    background-color: var(--clr-grey-bg);
+    padding: 5rem;
+    height: 800px;
+    margin-bottom: 2rem;
+}
+
+.divider-horizontal {
+    width: 5rem;
+    background-color: black;
+    height: 1px;
+}
+
+.divider-vertical {
+    width: 1px;
+    background-color: black;
+    height: 5rem;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.text {
+    width: 80%;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Introduction */
+
+#intro {
+    position: relative;
+}
+
+#intro .intro {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 50px;
+}
+
+#intro .intro .text {
+    width: 80%;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#intro .hero-img {
+    position: absolute;
+    bottom: 0px;
+    right: 7rem;
+}
+
+#intro .menu-btn {
+    width: 120px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#intro .menu-btn>i {
+    margin-top: 5px;
+    font-size: 1.75rem;
+}
+
+/* Name */
+
+#name {
+    display: flex;
+    gap: 4rem;
+}
+
+#name .camera {
+    width: 40%;
+    margin-left: 2rem;
+}
+
+#name .name {
+    width: 50%;
+}
+
+#name .name .common {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+#name .name .common>.heading {
+    margin: unset;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+#name .name .common>.divider-horizontal {
+    margin-top: 2.5rem;
+}
+
+#name .name .icons {
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#name .name .icons .icon {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #909090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 0.9rem;
+}
+
+/* PHOTO */
+
+#photo {
+    padding: unset;
+}
+
+#photo>img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/* Features */
+
+#features {
+    display: flex;
+}
+
+#features .features {
+    width: 45%;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+#features .feature-img {
+    width: 50%;
+    height: 80%;
+    margin-top: 5rem;
+    margin-left: 4rem;
+}
+
+.features .heading {
+    font-size: 3.5rem;
+    padding-top: 5rem;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#gallery .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 4rem;
+}
+
+#gallery .img-gallery>img {
+    width: 33.33%;
+}
+
+#gallery .img-gallery>img:nth-child(2) {
+    transform: scale(1.5);
+}
+
+/* Contact Us */
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+#contact-us .contacts .heading {
+    margin-top: unset;
+}
+
+#contact-us .contacts .text {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+#contact-us .contacts .form {
+    width: 45%;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem 2rem;
+    grid-template-areas:
+    "email subject"
+    "msg msg"
+    "btn btn";
+    
+}
+
+#contact-us .contacts .form .email {
+    grid-area: email;
+    background-color: transparent;
+    padding: 1rem;
+}
+#contact-us .contacts .form .subject {
+    grid-area: subject;
+    background-color: transparent;
+    padding: 1rem;
+}
+#contact-us .contacts .form .msg {
+    grid-area: msg;
+    height: 7rem;
+    background-color: transparent;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#contact-us .contacts .form .btn {
+    grid-area: btn;
+    background-color: black;
+    color: white;
+}
+
+#contact-us .copyright{
+    position: absolute;
+    bottom: 1rem;
+    right: 860px;
+}
