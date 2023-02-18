@@ -1,0 +1,119 @@
+@media screen and (max-width: 600px) {
+
+    /* body {
+        width: 100%;
+    } */
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2rem 0 0 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        justify-content: space-between;
+        height: 200px;
+        text-align: center;
+    }
+
+    .team-description .team-description-wrapper>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-news .blog-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-title {
+        padding-top: unset;
+        padding-bottom: unset;
+    }
+
+    .header-title>h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .choose-us ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .choose-us ul p {
+        margin: 0 20% auto;
+    }
+
+    .blog-news .blog-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-news .blog-list li {
+        margin: 0 12.5% auto;
+    }
+
+    .blog-news .blog-list li:nth-child(1) {
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-news .blog-list li:nth-child(2) {
+        margin-bottom: 1.5rem;
+    }
+
+    .team-description .team-description-wrapper>ul {
+        display: grid;
+        grid-template-columns: 220px 220px;
+        grid-template-rows: auto;
+        gap: 1.5rem 2rem;
+        grid-template-areas:
+            "up1 up2"
+            "down1 down2";
+
+    }
+
+    .team-description .team-description-wrapper>ul>li:first-child {
+        grid-area: up1;
+    }
+
+    .team-description .team-description-wrapper>ul>li:first-child>img {
+        width: 220px;
+        height: 210px;
+    }
+
+    .team-description .team-description-wrapper>ul>li:nth-child(2) {
+        grid-area: up2;
+    }
+
+    .team-description .team-description-wrapper>ul>li:nth-child(2)>img {
+        width: 220px;
+        height: 210px;
+    }
+
+    .team-description .team-description-wrapper>ul>li:nth-child(3) {
+        grid-area: down1;
+    }
+
+    .team-description .team-description-wrapper>ul>li:nth-child(3)>img {
+        width: 220px;
+        height: 210px;
+    }
+
+    .team-description .team-description-wrapper>ul>li:nth-child(4) {
+        grid-area: down2;
+    }
+
+    .team-description .team-description-wrapper>ul>li:nth-child(4)>img {
+        width: 220px;
+        height: 210px;
+    }
+    
+    .about-us p:nth-child(3){
+        width: 80%;
+    }
+}
