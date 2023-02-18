@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 12%;
+}
+
+.heading {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.bold {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.b-n-c {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#hero {
+    height: 100vh;
+    position: relative;
+}
+
+#hero #hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 55%;
+}
+
+#hero .title {
+    position: absolute;
+    width: 17rem;
+    height: 15rem;
+    top: 50px;
+    left: 60px;
+    box-shadow: 3px 3px 10px black;
+    padding: 1rem 1rem;
+}
+
+#hero .title .heading {
+    font-size: 2.3rem;
+}
+
+#hero .title .divider-horizontal {
+    height: 3px;
+    width: 9rem;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero .title>h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#hero #quote {
+    position: absolute;
+    right: 25px;
+    top: 290px;
+    width: 24rem;
+    height: 22rem;
+    padding: 0px 20px;
+    text-align: right;
+    color: #fff;
+    background: linear-gradient(to right, #9c928a, #c7c5c4);
+    box-shadow: 3px 3px 10px black;
+}
+
+#hero #quote .q-marks {
+    font-size: 6rem;
+    color: #938c88;
+    height: 50px;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#hero #quote #quote-text {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px black;
+    overflow: visible;
+}
+
+#info {
+    display: flex;
+    height: 98vh;
+    gap: 0px;
+    position: relative;
+}
+
+#info .s-n-c {
+    width: 70%;
+    background-color: #f2f0f3;
+    padding: 4rem 6rem;
+}
+
+#info .s-n-c .our-services {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    margin-bottom: 3.5rem;
+}
+
+#info .s-n-c .contact {
+    font-size: 1.4rem;
+}
+
+#info .heading-contact {
+    position: relative;
+    margin-bottom: 1.8rem;
+}
+
+#info .s-n-c .contact .contact-divider {
+    height: 1px;
+    width: 1013px;
+    background-color: black;
+    padding: unset;
+    position: absolute;
+    bottom: 0rem;
+    left: -6rem;
+}
+
+#info .s-n-c .contact .contacts {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+        "up up up up"
+        "down down . .";
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+#info .s-n-c .contact .contacts .up {
+    grid-area: up;
+}
+
+#info .s-n-c .contact .contacts .down {
+    grid-area: down;
+}
+
+#info .email .input-email {
+    background-color: #bab1ad;
+    color: #fff;
+    padding: 0.5rem 2rem 0.5rem 1.125rem;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#info .email .input-email::placeholder {
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+#info .btn {
+    border: none;
+    background-color: #67784d;
+    padding: 0.5rem 1.25rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    height: 49.58px;
+}
+
+#aside {
+    background-color: #bab1ad;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+}
+
+#aside .numbers{
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 100;
+    position: relative;
+}
+
+#aside .num-text{
+    color: #000;
+    font-size: 1.13rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -5px;
+    font-weight: 400;
+}
